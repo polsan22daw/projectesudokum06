@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="./javascript/sudoku.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Benvingut al joc SUDOKU</h1>
+    </header>
+    <div>
+        <p>En el sudoku clàssic, l'objectiu és omplir una graella de 9x9 files i
+            columnes subdividida en 9 subgraelles de 3x3 anomenades regions.
+            Donats uns quants números inicials, l'objectiu és col·locar un número de
+            l'1 al 9 en cada cel·la de tal manera que mai coincideixin dos números
+            iguals en cada línia horitzontal, vertical o en cada regió.</p>
+    </div>
+    <hr>
+    <!--<h2 id="errors">0</h2>-->
+
+    <!-- 9x9 board -->
+    <div id="dificultats">
+        <input type="radio" name="dificultat" />
+        <label for="facil">Facil</label>
+        <input type="radio" name="dificultat" />
+        <label for="Intermig">Intermig</label>
+        <input type="radio" name="dificultat" />
+        <label for="Dificil">Dificil</label>
+    </div>
+    <br><br>
+    <br><br>
+    <div id="container">
+        <table cellpaddibg="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="rellenar"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
