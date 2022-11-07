@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.cdnfonts.com/css/sudoku" rel="stylesheet">
+    <script src="sudoku.js"></script>
+</head>
+<header>
+    <div class="header"></div>
+    <br><br><br>
+    <h1>Sudoku</h1>
+    <div id="explicacio">
+        <p>El sudoku és un joc de lògica que consisteix en omplir una graella de 9x9 caselles amb 
+            nombres del 1 al 9, de manera que cada columna, cada fila i cada regió de 3x3 caselles contingui 
+            un únic nombre d'aquesta llista. Per això, cada casella pot contenir un únic nombre.</p>
+    </div>
+    <div id="setup-joc">
+        <div id="diff">
+            <h3>Escull la dificultat </h3>
+            <input id="dif1" type="radio" name="dif" value="facil" checked>
+            <label for="dif1">Facil</label>
+            <input id="dif2" type="radio" name="dif" value="intermig">
+            <label for="dif2">Intermig</label>
+            <input id="dif3" type="radio" name="dif" value="dificil">
+            <label for="dif3">Dificil</label>
+        </div>
+        <!--<div id="time">
+            <h3>Escull el temps: </h3>
+            <label><input id="temps1" type="radio" name="time" value="tres">3 Min</label>
+            <label><input id="temps2" type="radio" name="time" value="sis">6 Min</label>
+            <label><input id="temps3" type="radio" name="time" value="deu" checked>10 Min</label>
+        </div>-->
+    </div>
+    <br><br>
+    <button id="començar">Partida Nova</button>
+</header>
+<body>
+    <!--<div id="stats">
+        <p id="comptador"></p>
+        <p id="vides""></p>
+    </div>-->
+    <br>
+    <button id="chequeo" class="hidden">Comprovar</button>
+    <button id="sol" class="hidden">Autosolucionar</button>
+    <p class="hidden" id="resultat">Has guanyat!!!</p>
+    <br><br><br>
+    <div id="joc">
+        <div id="taula"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+
+.hidden {
+    display: none;
+}
+
+.header {
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 12%, rgba(85,87,87,1) 100%);
+    padding: 50px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;   
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    background: rgb(215,218,231);
+background: radial-gradient(circle, rgba(215,218,231,1) 0%, rgba(231,244,245,1) 100%);
+    border-bottom: 1px solid;     
+}
+
+h1 {
+    font-size: 65pt;
+    font-family: 'Sudoku', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+    color: black;
+}
+
+#explicacio {
+    height: calc(10vh - 7px);
+    margin: 16px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 14pt;
+    font-family: 'Sudoku', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+    color: black;
+}
+
+body {
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,96,139,1) 100%);
+
+    font-family: 'Sudoku', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+}
+
+#diff input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+  }
+
+  #diff label {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Sudoku', sans-serif;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#diff input[type="radio"]:checked + label {
+    background-color: #545454;
+    border-color: black;
+}
+
+
+#diff label:hover {
+    background-color: grey;
+    transition: 0.5s ease;
+  }
+
+#setup-joc {
+    display: flex;
+    justify-content: center;
+    font-size: 25pt;
+}
+
+#setup-joc > *{
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+}
+
+button {
+    justify-self: center;
+    font-family: 'Sudoku', sans-serif;
+    top:50%;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 40px;
+}
+
+button:hover {
+    background-color: grey;
+    transition: 0.5s ease;
+  }
+
+#joc {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px black;
+
+}
+
+#taula {
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 500px;
+    height: 500px;
+}
+
+input[type=text]{
+    font-family: 'Sudoku', sans-serif;
+    border: 1px solid transparent;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    margin: 0px;
+    vertical-align: middle;
+    font-size: 30pt;
+    background-color: transparent;
+    outline: none;
+}
+
+.quadre {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 0px;
+    vertical-align: middle;
+    font-size: 30pt;
+    font-family: Arial, sans-serif;
+}
+
+p.quadreInic {
+    font-family: 'Sudoku', sans-serif;
+    background-color: lightgray !important;
+}
+
+input:disabled{
+    color: black;
+}
+
+p.quadreselected {
+    background-color: rgb(20, 92, 116) !important;
+}
+
+p.selected {
+    background-color: lightblue;
+}
+
+p.incorrect {
+    background-color: red !important;
+}
+
+p.correct {
+    background-color: green !important;
+}
+
+.rightBorder {
+    border-right: 4px solid black;
+}
+
+.bottomBorder {
+    border-bottom: 4px solid black;
+}
+
+.footer {
+    background-color: lightgray;
+    text-align: center;
+}
